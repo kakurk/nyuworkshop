@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # activate the dcm2bids virtual enviroment. you should see (dcm2bids) appended to the beginning of the command line.
-source venvs/dcm2bids/bin/activate
+source venvs/nyuworkshop/bin/activate
 
 # the subject's ID
 XNAT_PARTICIPANT_ID=$1
