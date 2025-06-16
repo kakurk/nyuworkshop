@@ -1,0 +1,54 @@
+{
+  "descriptions": [
+    {
+      "datatype": "anat",
+      "suffix": "T1w",
+      "criteria": {
+        "SeriesDescription": "MPRAGE_SIEMENS"
+      }
+    },
+    {
+      "id": "task_rest",
+      "custom_entities": "task-rest",
+      "datatype": "func",
+      "suffix": "bold",
+      "criteria": {
+        "SeriesDescription": "REST*"
+      },
+      "sidecar_changes": {
+        "TaskName": "Resting State"
+    }
+    },
+    {
+      "id": "task_checkerboard",
+      "custom_entities": "task-checkerboard",
+      "datatype": "func",
+      "suffix": "bold",
+      "criteria": {
+        "SeriesDescription": "CHECKERBOARD*"
+      },
+      "sidecar_changes": {
+        "TaskName": "Visual Checkerboard"
+      }
+    },
+    {
+      "id": "task_breath",
+      "custom_entities": "task-breath",
+      "datatype": "func",
+      "suffix": "bold",
+      "criteria": {
+        "SeriesDescription": "BREATH_HOLD*"
+      },
+      "sidecar_changes": {
+        "TaskName": "Holding Breath"
+      }
+    },
+    {
+      "datatype": "dwi",
+      "suffix": "dwi",
+      "criteria": {
+        "SeriesDescription": "DIFF_137*"
+      }
+    }    
+  ]
+}
